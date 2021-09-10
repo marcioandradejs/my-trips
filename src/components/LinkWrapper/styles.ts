@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: fixed;
-  z-index: 1100; // biffer than leaflet
+  z-index: 1100; // bigger than leaflet
   top: var(--medium);
   right: var(--medium);
   color: var(--white);
@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 
   &:hover {
     svg {
-      color: var(--hightlight);
+      color: var(--highlight);
     }
   }
 `
