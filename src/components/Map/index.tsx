@@ -1,3 +1,4 @@
+import StickyNote from 'components/StickyNote'
 import { useRouter } from 'next/dist/client/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
@@ -59,6 +60,7 @@ const Map = ({ places }: MapProps) => {
           />
         )
       })}
+      <StickyNote />
     </MapContainer>
   )
 }
