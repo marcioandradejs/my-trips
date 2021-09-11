@@ -1,6 +1,7 @@
 import StickyNote from 'components/StickyNote'
 import { useRouter } from 'next/dist/client/router'
 import { MapContainer, TileLayer, Marker, MapConsumer } from 'react-leaflet'
+import L from 'leaflet'
 
 import * as S from './styles'
 
@@ -34,6 +35,17 @@ const CustomTileLayer = () => {
     />
   )
 }
+
+const greenIcon = new L.Icon({
+  iconUrl:
+    'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+  shadowUrl:
+    'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+})
 
 const Map = ({ places }: MapProps) => {
   const router = useRouter()
@@ -74,6 +86,7 @@ const Map = ({ places }: MapProps) => {
               key={`place-${id}`}
               position={[latitude, longitude]}
               title={name}
+              icon={greenIcon}
               eventHandlers={{
                 click: () => {
                   router.push(`/place/${slug}`)

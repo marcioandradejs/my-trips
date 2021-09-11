@@ -6,7 +6,7 @@ export const StickyNote = styled.div`
   left: 0;
   right: 0;
   padding: 2rem;
-  background-color: var(--background);
+  background-color: #152842;
   color: var(--white);
   text-align: center;
   display: flex;
