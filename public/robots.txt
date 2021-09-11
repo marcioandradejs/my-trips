@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://viagens-marcioandradejs.vercel.app/
+
+# Sitemaps
+Sitemap: https://viagens-marcioandradejs.vercel.app/sitemap.xml
