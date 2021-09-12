@@ -1,5 +1,6 @@
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import LinkWrapper from 'components/LinkWrapper'
+import StickyNote from 'components/StickyNote'
 
 import * as S from './styles'
 
@@ -18,6 +19,7 @@ const PageTemplate = ({ heading, body }: PageTemplateProps) => (
     <S.Body>
       <div dangerouslySetInnerHTML={{ __html: body }} />
     </S.Body>
+    <StickyNote />
   </S.Content>
 )
 
