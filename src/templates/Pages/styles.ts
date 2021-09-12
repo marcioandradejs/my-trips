@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const Content = styled.section`
+  padding: var(--large) var(--medium);
+  max-width: var(--container);
   text-align: center;
   display: flex;
   align-items: center;
@@ -19,8 +21,9 @@ export const Heading = styled.h1`
 export const Body = styled.div`
   // serve para estilos do body
   // p, a, ul, li, blockquote
-  p {
+  p,
+  a {
     font-size: var(--medium);
-    line-height: var(--medium);
+    line-height: var(--large);
   }
 `

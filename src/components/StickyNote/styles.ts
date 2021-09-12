@@ -17,5 +17,6 @@ export const StickyNote = styled.div`
   p {
     font-size: 1.6rem;
     line-height: 1.3;
+    color: var(--white);
   }
 `

@@ -12,27 +12,27 @@ export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
       <NextSeo
-        title="My Trips"
+        title="Viagens"
         description="Site de viagens para conhecer o mundo"
         canonical="https://marcioandradeblog.netlify.app/"
         openGraph={{
-          url: 'https://mytrips.com',
-          title: 'My Trips',
+          url: 'https://viagens-marcioandradejs.vercel.app',
+          title: 'Viagens',
           description:
             'A simple project to show in a map the places that I went and show more informations and photos when clicked.',
           images: [
             {
-              url: 'https://mytrips.com/img/cover.png',
+              url: 'https://viagens-marcioandradejs.vercel.app/img/cover.png',
               width: 1280,
               height: 720,
-              alt: 'My Trips',
+              alt: 'Viagens',
             },
           ],
-          site_name: 'My Trips',
+          site_name: 'Viagens',
         }}
       />
-      <LinkWrapper href="/about">
-        <InfoOutline size={32} aria-label="About" />
+      <LinkWrapper href="/sobre">
+        <InfoOutline size={32} aria-label="sobre" />
       </LinkWrapper>
       <Map places={places} />
     </>

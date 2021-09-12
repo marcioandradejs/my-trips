@@ -2,7 +2,13 @@ import * as S from './styles'
 
 const StickyNote = () => (
   <S.StickyNote>
-    <p>Marcio Andrade Map</p>
+    <a
+      href="https://github.com/marcioandradejs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Marcio Andrade
+    </a>
   </S.StickyNote>
 )
 

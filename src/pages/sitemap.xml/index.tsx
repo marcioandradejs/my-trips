@@ -18,7 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       lastmod: new Date().toISOString(),
     },
     {
-      loc: 'https://viagens-marcioandradejs.vercel.app/about',
+      loc: 'https://viagens-marcioandradejs.vercel.app/sobre',
       lastmod: new Date().toISOString(),
     }
   )
